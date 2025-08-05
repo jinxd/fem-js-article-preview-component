@@ -1,0 +1,150 @@
+:root {
+  --dk-grey-blue: hsl(217, 19%, 35%);
+  --dk-blue: hsl(214, 17%, 51%);
+  --grey-blue: hsl(212, 23%, 69%);
+  --lt-grey-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lt-grey-blue);
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  color: var(--dk-grey-blue);
+}
+
+a {
+  color: var(--dk-grey-blue);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 10px;
+  max-width: 995px;
+  font-size: 13px;
+
+
+  p {
+    font-weight: 500;
+    color: var(--grey-blue);
+  }
+
+  .card__image {
+    background: url('/images/drawers.jpg') center / cover no-repeat;
+    width: 100%;
+    min-width: 36%;
+    max-width: 390px;
+    aspect-ratio: 7/4;
+    min-height: fit-content;
+    border-radius: 10px 10px 0 0;
+
+
+  }
+
+  .card__content {
+    padding: 2rem 2.8125rem 3rem 2.8125rem;
+
+    .headline {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.byline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-top: 1.25rem;
+
+  .byline__img {
+    background: url('/images/avatar-michelle.jpg') center / cover no-repeat;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50vw;
+
+  }
+
+  .byline__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    width: 100%;
+
+    .author {
+      font-weight: 700;
+    }
+
+    time {
+      font-weight: 500;
+      color: var(--grey-blue);
+    }
+  }
+
+  .share {
+    background: var(--lt-grey-blue);
+    display: grid;
+    place-content: center;
+    border-radius: 50vw;
+    min-width: 35px;
+    min-height: 35px;
+    border: none;
+
+    img {
+      margin: 0 0 2px 2px;
+    }
+
+    &:hover {
+      background: var(--dk-grey-blue);
+      transition: all ease-in-out 0.2s;
+    }
+  }
+}
+
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-top: 1px dashed #b8b8b8;
+  padding: 1rem;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+  .card {
+    flex-direction: row;
+
+    .card__image {
+      border-radius: 10px 0 0 10px;
+    }
+  }
+}
