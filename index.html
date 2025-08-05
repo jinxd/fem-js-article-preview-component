@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="/scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Frontend Mentor | Article preview component</title>
 
@@ -32,7 +34,17 @@
               <time pubdate datetime="2020-06-28" title="28 Jun 2020">
                 28 Jun 2020</time>
             </div>
-            <button class="share"><img src="/images/icon-share.svg" alt="Share"></button>
+            <div id="share-popup" class="hidden">
+              <p>Share</p>
+              <ul>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook" aria-label="facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-square-twitter" aria-label="Twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-square-pinterest" aria-label="Pinterest"></i></a></li>
+              </ul>
+            </div>
+            <button id="share"><img src="/images/icon-share.svg" alt="Share">
+            </button>
+
           </div>
 
 
