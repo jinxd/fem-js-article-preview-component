@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "/Users/jtreloar/Sites/local/_sandpit/frontend-mentor/learning-paths/javascript-fundamentals/fem-js-article-preview-component/certificate/localhost.pem",
+    "key": "/Users/jtreloar/Sites/local/_sandpit/frontend-mentor/learning-paths/javascript-fundamentals/fem-js-article-preview-component/certificate/localhost.key",
+    "passphrase": "caffeine-kitty-2025"
+  }
+}
